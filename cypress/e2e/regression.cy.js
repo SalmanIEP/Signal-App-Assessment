@@ -18,6 +18,8 @@ describe('Regression Tests',()=>{
 
   it('Verify the red signal must turned on when the Signal application is launched',()=>{
      trafficSignals.getSignal(Signals.RED_SIGNAL).should(BE,TURNED_ON)
+     trafficSignals.getSignal(Signals.YELLOW_SIGNAL).should(NOT_BE,TURNED_ON)
+     trafficSignals.getSignal(Signals.GREEN_SIGNAL).should(NOT_BE,TURNED_ON)
   })
 
   it('Verify when user select the switch, in case of red signal, then yellow signal must be enabled along with red signal',()=>{

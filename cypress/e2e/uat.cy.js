@@ -5,7 +5,6 @@ import {Signals,COLORS} from '../fixtures/signals.js'
 
 describe('User Acceptance Tests',()=>{
 
-    const HAVE_COLOR ="eq"
     const trafficSignals = new trafficLights();
     const BE ="not.include"
     const NOT_BE = "include"
